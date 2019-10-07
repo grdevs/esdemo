@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/empower-support-final-logo-03-128x128.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+  <section class="header4 cid-rE1pT2EeVU mbr-parallax-background" id="header4-0">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="mbr-figure pt-5">
+                <img src="assets/images/empower-support-final-logo-3-1368x1368.png" alt="" title="" style="width: 45%;">
+            </div>
+            <div class="media-content col-md-10">
+                
+                
+                <div class="mbr-text align-center mbr-white pb-3">
+                    <p class="mbr-text mbr-fonts-style display-5"><br>Wellbeing and life coaching in Swansea</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section content4 cid-rE2kC9vQOd" id="content4-8">
+
+    
+
+    <div class="container">
+        <div class="media-container-row">
+            <div class="title col-12 col-md-8">
+                <h2 class="align-center pb-3 mbr-fonts-style display-2">
+                    Contact Us</h2>
+                <h3 class="mbr-section-subtitle align-center mbr-light mbr-fonts-style display-5">
+                    Please feel free to contact us on&nbsp;<a href="mailto:info@empowersupport.co.uk">info@empowersupport.co.uk</a> or alternatively via the form below and we will get back to you as soon as possible.</h3>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mbr-section" id="form-1" data-rv-view="11" style="background-color: rgb(204, 204, 204); padding-top: 80px; padding-bottom: 80px;">
+
+    
+
+    <div class="container">
+            <div class="row justify-content-center">
+                <div class="title col-12 col-lg-8">
+                    
+                    
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="media-container-column col-lg-8">
+                <form action="mail.php" method="post" class="mbr-form form-with-styler" onsubmit="return witsecSendMail(this)">
+                    <input type="hidden" name="to" value="">
+                    <input type="hidden" name="subject" value="Message from your website">
+                    <div class="row">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form!</div>
+                        <div hidden="hidden" data-form-alert="" class="alert alert-danger col-12">An error occured. Please try again.</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-xs-12 form-group col-md-4">
+                            <label for="name" class="form-control-label mbr-fonts-style">Name</label>
+                            <input type="text" name="name" required="required" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-xs-12 form-group col-md-4">
+                            <label for="email" class="form-control-label mbr-fonts-style">Email</label>
+                            <input type="email" name="email" required="required" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-xs-12 form-group col-md-4">
+                            <label for="phone" class="form-control-label mbr-fonts-style">Phone</label>
+                            <input type="tel" name="phone" class="form-control" placeholder="">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <label for="message" class="form-control-label mbr-fonts-style">Message</label>
+                            <textarea name="message" class="form-control form-control-textarea" placeholder=""></textarea>
+                        </div>
+                        <div class="col-md-12 input-group-btn align-center mbr-section-btn"><button type="submit" class="btn btn-primary display-4">SEND FORM</button></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script language="javascript">
+function witsecSendMail(obj) {
+    var frm = $(obj);
+    var success = false;
+    
+	// Make an AJAX call to the mailform
+    $.ajax({
+        type: frm.attr("method"),
+        url: frm.attr("action"),
+        data: frm.serialize(),
+        success: function (data) {
+            // Check the result
+            if (data == "1") {
+                frm.find("div .alert-danger").attr("hidden", "hidden");
+                frm.find("div .alert-success").removeAttr("hidden");
+                frm.trigger("reset");
+            } else {
+                frm.find("div .alert-success").attr("hidden", "hidden");
+                frm.find("div .alert-danger").removeAttr("hidden");
+            }
+        },
+        error: function (data) {
+            frm.find("div .alert-success").attr("hidden", "hidden");
+            frm.find("div .alert-danger").removeAttr("hidden");
+        },
+    });
+
+	// Return false, so the form doesn't try to submit again
+    return false;
+}
+</script>
+
+</section>
+
+<section once="footers" class="cid-rE1tBM7qac" id="footer6-7">
+
+    
+
+    
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2019 Empower Support - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/parallax/jarallax.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+</body>
+</html>
