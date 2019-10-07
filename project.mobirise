@@ -45,7 +45,7 @@
     "siteUrl": "",
     "sitemapSwitcherAuto": "on",
     "google-analytics": "",
-    "witsec-mailform-to": "geraint-randall@outlook.com",
+    "witsec-mailform-to": "info@empowersupport.co.uk",
     "witsec-mailform-from": "info@empowersupport.co.uk",
     "witsec-mailform-from-name": "Empower Website",
     "witsec-mailform-template": "Hi,\n\nYou have received a new message from your website.\n\nName: {name}\nE-mail: {email}\nPhone: {phone}\nMessage:\n{message}\n\nDate: {date}\nRemote IP: {ip}\n\nHave a nice day.",

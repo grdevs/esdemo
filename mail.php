@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		$headers .= "Reply-To: info@empowersupport.co.uk";
 
 		// Send the mail
-		if ( mail("geraint-randall@outlook.com", $subject, $body, $headers) ) {
+		if ( mail("info@empowersupport.co.uk", $subject, $body, $headers) ) {
 			echo "1";
 		}
 	}
